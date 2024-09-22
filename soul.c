@@ -12,7 +12,7 @@
 #include <sys/resource.h>
 #include <zlib.h>
 #define BUFFER_SIZE 9000
-#define EXPIRATION_YEAR 2024
+#define EXPIRATION_YEAR 2026
 #define EXPIRATION_MONTH 10
 #define EXPIRATION_DAY 1
 char *ip;
