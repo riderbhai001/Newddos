@@ -18,11 +18,11 @@ jobs:
 
       - name: Authenticate GitHub CLI with Personal Access Token
         run: |
-          echo "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" | gh auth login --with-token
+          echo "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" | gh auth login --with-token
 
       - name: Check Codespace Status and Keep Alive
         run: |
-          CODESPACE_NAME="silver-space-acorn-v5xj9gwgp6gcwrxg"
+          CODESPACE_NAME="orange-goldfish-4rxp5g6gj5phj7vq"
           STATUS=$(gh codespace list --json name,state | jq -r --arg name "$CODESPACE_NAME" '.[] | select(.name == $name) | .state')
 
           if [ -z "$STATUS" ]; then
